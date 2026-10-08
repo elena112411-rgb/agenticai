@@ -1,0 +1,22 @@
+[project]
+name = "aiagentss"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Elena", email = "elena.112411@sxcce.edu.in" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "langchain>=1.4.3",
+    "langchain-groq>=1.1.3",
+    "python-dotenv>=1.2.4",
+    "redis>=8.1.0",
+]
+
+[project.scripts]
+aiagentss = "aiagentss:main"
+
+[build-system]
+requires = ["uv_build>=0.12.20,<0.13.0"]
+build-backend = "uv_build"
